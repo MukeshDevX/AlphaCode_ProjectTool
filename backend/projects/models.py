@@ -1,8 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# progress status
-
 class Project(models.Model):
     STATUS_CHOICES = [
         ('active', 'Active'),
