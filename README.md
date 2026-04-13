@@ -4,12 +4,6 @@ A full-stack project management application built with Django REST Framework and
 
 ---
 
-## 🚀 Live Demo
-
-> Run locally — setup instructions below.
-
----
-
 ## ✨ Features
 
 - **User Authentication** — Register, login, and logout with token-based auth
@@ -138,12 +132,6 @@ Frontend runs at: `http://localhost:5173`
 
 ---
 
-## 📸 Screenshots
-
-> Coming soon
-
----
-
 ## 🔮 Future Improvements
 
 - Real-time notifications using WebSockets
@@ -156,12 +144,6 @@ Frontend runs at: `http://localhost:5173`
 
 ## 👤 Author
 
-**Taki**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [your-linkedin](https://linkedin.com/in/your-linkedin)
-
----
-
-## 📄 License
-
-© 2025 Taki. All rights reserved.
+**Mukesh Kumar**
+- GitHub: [@MukeshDevX](https://github.com/mukeshdevx)
+- LinkedIn: [your-linkedin](https://linkedin.com/in/mukeshdevx)
