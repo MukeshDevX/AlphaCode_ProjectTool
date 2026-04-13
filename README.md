@@ -1,149 +1,75 @@
-# 📋 ProjectHub — Project Management Tool
+# ProjectHub — Project Management Tool
 
-A full-stack project management application built with Django REST Framework and React. Designed to help teams create projects, manage tasks, and collaborate efficiently.
-
----
-
-## ✨ Features
-
-- **User Authentication** — Register, login, and logout with token-based auth
-- **Project Management** — Create, edit, and delete projects with status tracking
-- **Kanban Board** — Visual task board with To Do / In Progress / Done columns
-- **Task Management** — Add tasks with priority levels, due dates, and descriptions
-- **Team Collaboration** — Add members to projects and assign tasks
-- **Comments** — Comment on tasks and delete your own comments
-- **Progress Tracking** — Live progress bar per project
-- **Search** — Real-time project search by name or description
-- **Admin Panel** — Full data management via Django admin
+A full-stack project management app built with Django and React. I built this project to practice full-stack development and learn how REST APIs work with a React frontend.
 
 ---
 
-## 🛠️ Tech Stack
+## Features
 
-**Frontend**
-- React 18
-- React Router DOM
-- Vite
-- CSS3 (custom dark theme)
-
-**Backend**
-- Python 3
-- Django 4.2
-- Django REST Framework
-- SQLite3
+- User registration and login
+- Create and manage projects
+- Kanban board with To Do / In Progress / Done columns
+- Add tasks with priority and due date
+- Comment on tasks
+- Add team members to projects
+- Search projects
+- Progress tracking per project
 
 ---
 
-## 📁 Project Structure
+## Tech Stack
 
-```
-projecthub/
-├── backend/
-│   ├── manage.py
-│   ├── requirements.txt
-│   ├── core/              # settings, urls, wsgi
-│   ├── accounts/          # user auth (register, login, logout)
-│   └── projects/          # projects, tasks, comments
-│
-└── frontend/
-    ├── index.html
-    ├── package.json
-    └── src/
-        ├── api.js         # all API calls
-        ├── App.jsx
-        ├── pages/         # Login, Register, Dashboard, ProjectDetail
-        └── components/    # Navbar, Modal, ProjectCard, TaskCard, TaskModal
-```
+- **Frontend:** React, React Router, Vite
+- **Backend:** Python, Django, Django REST Framework
+- **Database:** SQLite3
+- **Auth:** Token-based authentication
 
 ---
 
-## ⚙️ Setup & Installation
+## Getting Started
 
-### Prerequisites
-- Python 3.8+
-- Node.js 16+
-- npm
-
----
-
-### Backend Setup
+### Backend
 
 ```bash
-# Go to backend folder
 cd backend
-
-# Create virtual environment
 python -m venv venv
-
-# Activate virtual environment
-venv\Scripts\activate        # Windows
-source venv/bin/activate     # Mac/Linux
-
-# Install dependencies
+venv\Scripts\activate
 pip install -r requirements.txt
-
-# Run migrations
-python manage.py makemigrations accounts
-python manage.py makemigrations projects
 python manage.py migrate
-
-# (Optional) Create admin user
-python manage.py createsuperuser
-
-# Start server
 python manage.py runserver
 ```
 
-Backend runs at: `http://localhost:8000`
-
----
-
-### Frontend Setup
+### Frontend
 
 ```bash
-# Go to frontend folder
 cd frontend
-
-# Install dependencies
 npm install
-
-# Start dev server
 npm run dev
 ```
 
-Frontend runs at: `http://localhost:5173`
+Open `http://localhost:5173` in your browser.
 
 ---
 
-## 🔑 API Endpoints
+## What I Learned
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/auth/register/` | Register new user |
-| POST | `/api/auth/login/` | Login |
-| POST | `/api/auth/logout/` | Logout |
-| GET/POST | `/api/projects/` | List / Create projects |
-| GET/PUT/DELETE | `/api/projects/:id/` | Project detail |
-| POST | `/api/projects/:id/add-member/` | Add team member |
-| GET/POST | `/api/projects/:id/tasks/` | List / Create tasks |
-| GET/PUT/DELETE | `/api/projects/:id/tasks/:id/` | Task detail |
-| POST | `/api/projects/:id/tasks/:id/comments/` | Add comment |
-| DELETE | `/api/projects/:id/tasks/:id/comments/:id/` | Delete comment |
+- How to build REST APIs with Django REST Framework
+- Connecting a React frontend to a Django backend
+- Token authentication flow
+- Managing state in React with hooks
 
 ---
 
-## 🔮 Future Improvements
+## Future Plans
 
-- Real-time notifications using WebSockets
-- Drag and drop tasks between columns
-- File attachments on tasks
-- Email notifications for due dates
-- Deploy to cloud (Render / Vercel)
+- Add drag and drop for tasks
+- Real-time updates with WebSockets
+- Deploy online
 
 ---
 
-## 👤 Author
+## Author
 
-**Mukesh Kumar**
-- GitHub: [MukeshDevX](https://github.com/mukeshdevx)
-- LinkedIn: [MukeshDevX](https://linkedin.com/in/mukeshdevx)
+**Mukesh** — [MukeshDevX](https://github.com/MukeshDevX)
+
+© 2025 Mukesh. All rights reserved.
