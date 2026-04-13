@@ -145,5 +145,5 @@ Frontend runs at: `http://localhost:5173`
 ## 👤 Author
 
 **Mukesh Kumar**
-- GitHub: [@MukeshDevX](https://github.com/mukeshdevx)
+- GitHub: [MukeshDevX](https://github.com/mukeshdevx)
 - LinkedIn: [MukeshDevX](https://linkedin.com/in/mukeshdevx)
